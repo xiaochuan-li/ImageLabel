@@ -28,13 +28,14 @@ def generate_log(img_path, log_path):
 
 
 def save_mask(img_size, img_path, mask_dir, poly, color=(255, 255, 255)):
-    img_path = img_path[:-5] + '.png'
+    img_name = img_path.split('.')[0]
     mask_img = np.zeros(img_size, dtype='uint8')
     cv2.fillPoly(mask_img, poly, color)
     if not os.path.isdir(mask_dir):
         os.mkdir(mask_dir)
     # real_mask=cv2.resize(mask_img,(int(img_size[0]*scale[0]),int(img_size[1]*scale[1])))
-    cv2.imwrite(os.path.join(mask_dir, img_path), mask_img)
+    print(os.path.join(mask_dir, img_path))
+    cv2.imwrite(os.path.join(mask_dir, img_name + '.png'), mask_img)
     return mask_img
 
 
@@ -80,7 +81,7 @@ def draw(img, point):
 def get_args():
     parser = OptionParser()
     parser.add_option('--img_path', dest='path',
-                      default="D:\\download\\gr_5_test_2_pictures-20191002T093219Z-001\\gr_5_test_2_pictures",
+                      default="img\\test1",
                       type='str',
                       help='path of images')
     parser.add_option('--log_name', dest='log_name', default="log.txt",
@@ -97,18 +98,18 @@ def get_args():
 
 if __name__ == "__main__":
     args = get_args()
-    root='data'
+    root = 'data'
     if not os.path.isdir(root):
         os.mkdir(root)
-    label_class = os.path.join("data",args.label_class)
+    label_class = os.path.join("data", args.label_class)
     if not os.path.isdir(label_class):
         os.mkdir(label_class)
     path = args.path
-    mask_path=os.path.join(label_class,args.mask_name)
+    mask_path = os.path.join(label_class, args.mask_name)
     if not os.path.isdir(mask_path):
         os.mkdir(mask_path)
-    log_path = os.path.join(label_class,args.log_name)
-    print(mask_path,log_path)
+    log_path = os.path.join(label_class, args.log_name)
+    print(mask_path, log_path)
     is_log = args.is_log
 
     for root, dir, files in os.walk(path):
@@ -120,6 +121,7 @@ if __name__ == "__main__":
             while True:
                 img_drawable = draw(img_ori, point)
                 cv2.imshow(img_path, img_drawable)
-                if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path,mask_dir=mask_path, is_log=is_log):
+                if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path,
+                                                              mask_dir=mask_path, is_log=is_log):
                     break
             cv2.destroyAllWindows()
