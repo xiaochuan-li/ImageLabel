@@ -33,7 +33,6 @@ def save_mask(img_size, img_path, mask_dir, poly, color=(255, 255, 255)):
     cv2.fillPoly(mask_img, poly, color)
     if not os.path.isdir(mask_dir):
         os.mkdir(mask_dir)
-    # real_mask=cv2.resize(mask_img,(int(img_size[0]*scale[0]),int(img_size[1]*scale[1])))
     print(os.path.join(mask_dir, img_path))
     cv2.imwrite(os.path.join(mask_dir, img_name + '.png'), mask_img)
     return mask_img
