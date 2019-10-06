@@ -83,8 +83,12 @@ def get_args():
                       default="D:\\download\\gr_5_test_2_pictures-20191002T093219Z-001\\gr_5_test_2_pictures",
                       type='str',
                       help='path of images')
-    parser.add_option('--log_path', dest='log_path', default="log.txt",
+    parser.add_option('--log_name', dest='log_name', default="log.txt",
                       type='str', help='path of log file')
+    parser.add_option('--mask_name', dest='mask_name', default="mask",
+                      type='str', help='path of mask')
+    parser.add_option('--label_class', dest='label_class', default="fond",
+                      type='str', help='the name of class')
     parser.add_option('--is_log', dest='is_log', action='store_true', default=False,
                       help='whether generate log file or not')
     (options, args) = parser.parse_args()
@@ -93,8 +97,18 @@ def get_args():
 
 if __name__ == "__main__":
     args = get_args()
+    root='data'
+    if not os.path.isdir(root):
+        os.mkdir(root)
+    label_class = os.path.join("data",args.label_class)
+    if not os.path.isdir(label_class):
+        os.mkdir(label_class)
     path = args.path
-    log_path = args.log_path
+    mask_path=os.path.join(label_class,args.mask_name)
+    if not os.path.isdir(mask_path):
+        os.mkdir(mask_path)
+    log_path = os.path.join(label_class,args.log_name)
+    print(mask_path,log_path)
     is_log = args.is_log
 
     for root, dir, files in os.walk(path):
@@ -106,6 +120,6 @@ if __name__ == "__main__":
             while True:
                 img_drawable = draw(img_ori, point)
                 cv2.imshow(img_path, img_drawable)
-                if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path, is_log=is_log):
+                if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path,mask_dir=mask_path, is_log=is_log):
                     break
             cv2.destroyAllWindows()
