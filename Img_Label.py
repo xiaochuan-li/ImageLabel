@@ -108,9 +108,7 @@ if __name__ == "__main__":
     if not os.path.isdir(mask_path):
         os.mkdir(mask_path)
     log_path = os.path.join(label_class, args.log_name)
-    print(mask_path, log_path)
     is_log = args.is_log
-
     for root, dir, files in os.walk(path):
         for img_path in files[:2]:
 
