@@ -1,10 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ImageLabel/src/split_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageLabel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageLabel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageLabel/pic_mesure.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageLabel/Img_Label.py" afterDir="false" />
+    <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="inplementation">
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0049.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0051.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0054.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0055.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0056.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0058.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0059.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0060.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0061.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0062.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0063.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0064.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0066.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0067.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0068.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0069.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0070.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0071.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0072.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0073.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0074.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0075.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0076.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0077.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0078.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0079.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0081.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0082.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0083.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0084.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0085.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0086.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0087.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0088.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0089.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0090.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0091.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0092.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0094.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0095.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0097.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0098.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0099.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0157.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/img/test1/0158.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,16 +235,6 @@
             <path>
               <item name="ImageLabel" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImageLabel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageLabel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageLabel" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ImageLabel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ImageLabel" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ImageLabel" type="b2602c69:ProjectViewProjectNode" />
@@ -306,12 +452,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570345777537</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="inplementation">
+      <created>1570349296659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570349296659</updated>
+    </task>
+    <task id="LOCAL-00005" summary="inplementation">
+      <created>1570349350703</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570349350703</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
