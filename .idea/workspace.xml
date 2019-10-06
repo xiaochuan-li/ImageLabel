@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="" />
+    <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageLabel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageLabel/src/split_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageLabel/src/split_video.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ImageLabel/Img_Label.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="82" column="42" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="82" selection-end-column="42" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ImageLabel/src/split_video.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="782">
+              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
               <folding>
                 <element signature="e#22#31#0" expanded="true" />
               </folding>
@@ -49,8 +52,8 @@
         <option value="$PROJECT_DIR$/pic_mesure.py" />
         <option value="$PROJECT_DIR$/../ImageLabel/log.txt" />
         <option value="$PROJECT_DIR$/../ImageLabel/pic_mesure.py" />
-        <option value="$PROJECT_DIR$/../ImageLabel/src/split_video.py" />
         <option value="$PROJECT_DIR$/../ImageLabel/Img_Label.py" />
+        <option value="$PROJECT_DIR$/../ImageLabel/src/split_video.py" />
       </list>
     </option>
   </component>
@@ -115,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Img_Label">
+  <component name="RunManager" selected="Python.split_video">
     <configuration name="Img_Label" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ImageLabel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,9 +254,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.split_video" />
         <item itemvalue="Python.Img_Label" />
         <item itemvalue="Python.pic_mesure" />
-        <item itemvalue="Python.split_video" />
       </list>
     </recent_temporary>
   </component>
@@ -324,11 +327,19 @@
       <option name="project" value="LOCAL" />
       <updated>1570349795610</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit 001">
+      <created>1570350269830</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570350269830</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -392,20 +403,20 @@
     <entry file="file://$PROJECT_DIR$/../ImageLabel/data/med/mask/000.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ImageLabel/src/split_video.py">
+    <entry file="file://$PROJECT_DIR$/../ImageLabel/Img_Label.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ImageLabel/Img_Label.py">
+    <entry file="file://$PROJECT_DIR$/../ImageLabel/src/split_video.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="82" column="42" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="82" selection-end-column="42" />
+        <state relative-caret-position="782">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,11 @@
 # *_*coding:utf-8 *_*
 import os
+from optparse import OptionParser
 
 import cv2
 
 
-def split_video(path_video, dir_img):
+def split_video(path_video, dir_img, frames):
     if not os.path.isfile(path_video):
         print(" Invalid path")
         exit()
@@ -20,18 +21,30 @@ def split_video(path_video, dir_img):
     while ret:
         count += 1
         ret, frame = cap.read()
-        if count % 10 == 0:
-            print(" the {}th picture ...".format(str(count // 10).zfill(4)))
-            cv2.imwrite(os.path.join(dir_img, str(count // 10).zfill(4) + '.png'), frame)
+        if count % frames == 0:
+            print(" the {}th picture ...".format(str(count // frames).zfill(4)))
+            cv2.imwrite(os.path.join(dir_img, str(count // frames).zfill(4) + '.png'), frame)
         if cv2.waitKey(5) & 0xFF == ord('q'):
             break
     cap.release()
     cv2.destroyAllWindows()
 
 
+def get_args():
+    parser = OptionParser()
+    parser.add_option('--video_path', dest='video_path',
+                      default="video\\video_001.mp4",
+                      type='str',
+                      help='path of video')
+    parser.add_option('--number_frames', dest='frames', default=10,
+                      type='int', help='number of frames')
+    (options, args) = parser.parse_args()
+    return options
+
 if __name__ == "__main__":
-    path_video = "video\\video_001.mp4"
+    args = get_args()
+    frames = args.frames
+    path_video = args.video_path
     video_name = os.path.split(path_video)[-1].split('.')[0]
     dir_img = os.path.join("img", video_name)
-
-    split_video(path_video, dir_img)
+    split_video(path_video, dir_img, frames)
