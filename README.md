@@ -26,8 +26,8 @@ logfile and mask pictures will be stored in data, as the structure followed
 ## 2. video splite
 our images are generated from a video, which means that we have to split the video into several frames 
 
-    python split_video.py --video_path      \path\to\video      \
-                          --number_frames   \number\of\frames   \
+    python src/split_video.py --video_path      \path\to\video      \
+                              --number_frames   \number\of\frames   \
                          
 these images generated will be saved as followed  
   
