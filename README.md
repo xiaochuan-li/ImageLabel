@@ -1,5 +1,8 @@
-# Point_man
-A toolbox for pointing in certain pictures
+# ImageLabel Tool
+
+A toolbox for image labeling
+This toolbox is created for the segmentation objects, to do so, you just have to point out the vertex for each picture in an order of clockwise or counterclockwise. This project considers only quadrilateral edges, further version of more complexe edges will be released if necessary.
+
 ## 1. Quick start
     python Img_Label.py  --img_path         \path\to\images     \
                          --is_log                               \
