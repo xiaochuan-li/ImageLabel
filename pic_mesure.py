@@ -87,10 +87,6 @@ def get_args():
                       type='str', help='path of log file')
     parser.add_option('--is_log', dest='is_log', action='store_true', default=False,
                       help='whether generate log file or not')
-    parser.add_option('--x_length', dest='x_length', default=1024, type='int',
-                      help='the x length of the picture displayed')
-    parser.add_option('--y_length', dest='y_length', default=1024, type='int',
-                      help='the y length of the picture displayed')
     (options, args) = parser.parse_args()
     return options
 
@@ -99,7 +95,6 @@ if __name__ == "__main__":
     args = get_args()
     path = args.path
     log_path = args.log_path
-    new_shape = (args.x_length, args.y_length)
     is_log = args.is_log
 
     for root, dir, files in os.walk(path):
