@@ -5,10 +5,8 @@ from optparse import OptionParser
 import cv2
 import numpy as np
 
-point = []
-points = []
 flag = 0
-scale_facter = [1, 1]
+point = []
 
 
 def check_empty():
@@ -19,16 +17,37 @@ def check_empty():
         return False
 
 
-def check_full(scale, is_log=False, log_path="log.txt"):
+def generate_log(img_path, log_path):
+    global point
+    with open(log_path, 'a') as f:
+        string_log = img_path + '------'
+
+        for x in point:
+            string_log += '(' + str(int(x[0])).center(6, ' ') + " , " + str(int(x[1])).center(6, ' ') + "), "
+        f.write(string_log[:-2] + '\n')
+
+
+def save_mask(img_size, img_path, mask_dir, poly, color=(255, 255, 255)):
+    img_path = img_path[:-5] + '.png'
+    mask_img = np.zeros(img_size, dtype='uint8')
+    cv2.fillPoly(mask_img, poly, color)
+    if not os.path.isdir(mask_dir):
+        os.mkdir(mask_dir)
+    # real_mask=cv2.resize(mask_img,(int(img_size[0]*scale[0]),int(img_size[1]*scale[1])))
+    cv2.imwrite(os.path.join(mask_dir, img_path), mask_img)
+    return mask_img
+
+
+def check_full(img, img_path, is_log=True, log_path="log.txt", mask_dir='mask', color=(0, 255, 0)):
     global point, flag
     if flag == 4:
+        poly = np.array([point])
+        added = save_mask(img.shape, img_path, mask_dir, poly)
+        img_add = cv2.addWeighted(added, 0.3, img, 0.7, 0)
+        cv2.imshow(img_path, img_add)
+        cv2.waitKey()
         if is_log:
-            with open(log_path, 'a') as f:
-                string_log = ''
-                for x in [(scale[0] * p[0], scale[1] * p[1]) for p in point]:
-                    string_log += str(x[0]) + " , " + str(x[1]) + " | "
-                f.write(string_log + '\n')
-        points.append([(scale[0] * p[0], scale[1] * p[1]) for p in point])
+            generate_log(img_path, log_path)
         point = []
         flag = 0
         return True
@@ -36,11 +55,10 @@ def check_full(scale, is_log=False, log_path="log.txt"):
         return False
 
 
-def draw_circle(event, x, y, flags, param):
-    global point, points, flag
+def draw_circle(event, x, y, flags, params):
+    global flag, point
     if event == cv2.EVENT_LBUTTONDBLCLK:
-        print("ajoute point [{},{}] with a scale factor : ({},{}) and the flag = {}".format(x, y, scale_facter[0],
-                                                                                            scale_facter[1], flag + 1))
+        print("ajoute point [{},{}] , the flag = {}".format(x, y, flag + 1))
         point.append((x, y))
         flag += 1
 
@@ -52,9 +70,8 @@ def draw_circle(event, x, y, flags, param):
             flag -= 1
 
 
-def draw(img):
+def draw(img, point):
     new_img = np.array(img)
-    global point
     for p in point:
         new_img = cv2.circle(new_img, p, 3, (0, 0, 255))
     return new_img
@@ -87,18 +104,13 @@ if __name__ == "__main__":
 
     for root, dir, files in os.walk(path):
         for img_path in files[:2]:
+
+            img_ori = cv2.imread(os.path.join(path, img_path))
             cv2.namedWindow(img_path)
             cv2.setMouseCallback(img_path, draw_circle)
-            img_ori = cv2.imread(os.path.join(path, img_path))
-            shape_ori = img_ori.shape
-            scale = (float(shape_ori[0]) / new_shape[0], shape_ori[1] / new_shape[1])
-            scale_facter[0] = scale[0]
-            scale_facter[1] = scale[1]
-            img = cv2.resize(img_ori, new_shape)
             while True:
-                img_drawable = draw(img)
+                img_drawable = draw(img_ori, point)
                 cv2.imshow(img_path, img_drawable)
-                if cv2.waitKey(20) & 0xFF == 27 or check_full(scale, log_path=log_path, is_log=is_log):
+                if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path, is_log=is_log):
                     break
             cv2.destroyAllWindows()
-    print(points)
