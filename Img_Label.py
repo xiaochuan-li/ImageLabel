@@ -85,9 +85,9 @@ def get_args():
                       help='path of images')
     parser.add_option('--log_name', dest='log_name', default="log.txt",
                       type='str', help='path of log file')
-    parser.add_option('--mask_name', dest='mask_name', default="mask",
+    parser.add_option('--mask_name', dest='mask_name', default="mask_fond",
                       type='str', help='path of mask')
-    parser.add_option('--label_class', dest='label_class', default="fond",
+    parser.add_option('--label_class', dest='label_class', default="sers",
                       type='str', help='the name of class')
     parser.add_option('--is_log', dest='is_log', action='store_true', default=False,
                       help='whether generate log file or not')
