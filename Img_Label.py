@@ -80,7 +80,7 @@ def draw(img, point):
 def get_args():
     parser = OptionParser()
     parser.add_option('--img_path', dest='path',
-                      default="img\\test1",
+                      default="img\\video_001",
                       type='str',
                       help='path of images')
     parser.add_option('--log_name', dest='log_name', default="log.txt",
@@ -110,8 +110,7 @@ if __name__ == "__main__":
     log_path = os.path.join(label_class, args.log_name)
     is_log = args.is_log
     for root, dir, files in os.walk(path):
-        for img_path in files[:2]:
-
+        for img_path in files:
             img_ori = cv2.imread(os.path.join(path, img_path))
             cv2.namedWindow(img_path)
             cv2.setMouseCallback(img_path, draw_circle)
