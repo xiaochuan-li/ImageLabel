@@ -16,7 +16,7 @@ def lancer_split(video_path, frames=10):
     video_name = os.path.split(video_path)[-1].split('.')[0]
     dir_img = os.path.join(root, "img", video_name)
     if not os.path.isdir(dir_img):
-        os.mkdir(dir_img)
+        os.makedirs(dir_img)
     split_video(video_path, dir_img, frames)
     mes = Tk()
     mes.title('Message from split')

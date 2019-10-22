@@ -113,14 +113,19 @@ def lance_label(dir_img, ser_type, class_name):
 
             img_ori = cv2.imread(os.path.join(path, img_path))
             cv2.namedWindow(img_path)
+            cv2.startWindowThread()
             cv2.setMouseCallback(img_path, draw_circle)
             while True:
                 img_drawable = draw(img_ori, point)
                 cv2.imshow(img_path, img_drawable)
-                if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path,
-                                                              mask_dir=mask_path, is_log=is_log):
+                command = cv2.waitKey(1)
+                if command & 0xFF == ord('q'):
+                    cv2.destroyWindow(img_path)
+                    return
+                elif command & 0xFF == ord('n') or check_full(img_drawable, img_path,
+                                                              log_path=log_path, mask_dir=mask_path, is_log=is_log):
+                    cv2.destroyWindow(img_path)
                     break
-                if cv2.waitKey() == 81 | cv2.waitKey() == 113:
-                    cv2.destroyAllWindows()
-                    quit()
-            cv2.destroyAllWindowds()
+                # if cv2.waitKey() == 81 | cv2.waitKey() == 113:
+                #    cv2.destroyAllWindows()
+                #    quit()
