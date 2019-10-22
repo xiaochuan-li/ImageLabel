@@ -10,7 +10,7 @@ def split_video(path_video, dir_img, frames):
         print(" Invalid path")
         exit()
     if not os.path.isdir(dir_img):
-        os.mkdir(dir_img)
+        os.mkdirs(dir_img)
     cap = cv2.VideoCapture(path_video)
     count = 0
     if cap.isOpened():  # 判断是否正常打开

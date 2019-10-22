@@ -99,7 +99,7 @@ def lance_label(dir_img, ser_type, class_name):
     root = os.path.join(os.getcwd(), 'data')
     if not os.path.isdir(root):
         os.mkdir(root)
-    label_class = os.path.join("data", ser_type)
+    label_class = os.path.join(root, ser_type)
     if not os.path.isdir(label_class):
         os.mkdir(label_class)
     path = dir_img

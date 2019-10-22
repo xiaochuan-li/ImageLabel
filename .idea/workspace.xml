@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="UI">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Img_Label.py" beforeDir="false" afterPath="$PROJECT_DIR$/Img_Label.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/split_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/split_video.py" afterDir="false" />
@@ -244,7 +243,7 @@
       <workItem from="1571725124097" duration="215000" />
       <workItem from="1571725381597" duration="106000" />
       <workItem from="1571725505411" duration="98000" />
-      <workItem from="1571725623425" duration="7886000" />
+      <workItem from="1571725623425" duration="8724000" />
     </task>
     <task id="LOCAL-00001" summary="inplementation">
       <created>1570344220065</created>
@@ -316,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570383478906</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="UI">
+      <created>1571733539700</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1571733539700</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +349,8 @@
     <MESSAGE value="inplementation" />
     <MESSAGE value="commit 001" />
     <MESSAGE value="commit 002" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 002" />
+    <MESSAGE value="UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
