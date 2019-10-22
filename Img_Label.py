@@ -80,7 +80,7 @@ def draw(img, point):
 def get_args():
     parser = OptionParser()
     parser.add_option('--img_path', dest='path',
-                      default="img\\test1",
+                      default="img\\video_001",
                       type='str',
                       help='path of images')
     parser.add_option('--log_name', dest='log_name', default="log.txt",
@@ -95,22 +95,21 @@ def get_args():
     return options
 
 
-if __name__ == "__main__":
-    args = get_args()
-    root = 'data'
+def lance_label(dir_img, ser_type, class_name):
+    root = os.path.join(os.getcwd(), 'data')
     if not os.path.isdir(root):
         os.mkdir(root)
-    label_class = os.path.join("data", args.label_class)
+    label_class = os.path.join("data", ser_type)
     if not os.path.isdir(label_class):
         os.mkdir(label_class)
-    path = args.path
-    mask_path = os.path.join(label_class, args.mask_name)
+    path = dir_img
+    mask_path = os.path.join(label_class, class_name)
     if not os.path.isdir(mask_path):
         os.mkdir(mask_path)
-    log_path = os.path.join(label_class, args.log_name)
-    is_log = args.is_log
+    log_path = os.path.join(label_class, class_name + '.log')
+    is_log = True
     for root, dir, files in os.walk(path):
-        for img_path in files[:2]:
+        for img_path in files:
 
             img_ori = cv2.imread(os.path.join(path, img_path))
             cv2.namedWindow(img_path)
@@ -121,4 +120,7 @@ if __name__ == "__main__":
                 if cv2.waitKey(20) & 0xFF == 27 or check_full(img_drawable, img_path, log_path=log_path,
                                                               mask_dir=mask_path, is_log=is_log):
                     break
-            cv2.destroyAllWindows()
+                if cv2.waitKey() == 81 | cv2.waitKey() == 113:
+                    cv2.destroyAllWindows()
+                    quit()
+            cv2.destroyAllWindowds()

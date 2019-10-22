@@ -41,6 +41,8 @@ def get_args():
     (options, args) = parser.parse_args()
     return options
 
+
+'''
 if __name__ == "__main__":
     args = get_args()
     frames = args.frames
@@ -48,3 +50,4 @@ if __name__ == "__main__":
     video_name = os.path.split(path_video)[-1].split('.')[0]
     dir_img = os.path.join("img", video_name)
     split_video(path_video, dir_img, frames)
+'''
