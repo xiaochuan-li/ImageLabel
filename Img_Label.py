@@ -95,7 +95,7 @@ def get_args():
     return options
 
 
-def lance_label(dir_img, ser_type, class_name):
+def lance_label(dir_img, ser_type, class_name, begin_num):
     root = os.path.join(os.getcwd(), 'data')
     if not os.path.isdir(root):
         os.mkdir(root)
@@ -109,7 +109,7 @@ def lance_label(dir_img, ser_type, class_name):
     log_path = os.path.join(label_class, class_name + '.log')
     is_log = True
     for root, dir, files in os.walk(path):
-        for img_path in files:
+        for img_path in sorted(files)[begin_num - 1:]:
 
             img_ori = cv2.imread(os.path.join(path, img_path))
             cv2.namedWindow(img_path)
@@ -126,6 +126,3 @@ def lance_label(dir_img, ser_type, class_name):
                                                               log_path=log_path, mask_dir=mask_path, is_log=is_log):
                     cv2.destroyWindow(img_path)
                     break
-                # if cv2.waitKey() == 81 | cv2.waitKey() == 113:
-                #    cv2.destroyAllWindows()
-                #    quit()

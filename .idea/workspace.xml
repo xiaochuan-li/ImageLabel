@@ -4,9 +4,7 @@
     <list default="true" id="a9cfbb73-7e49-48c5-8d63-aa9ad1a36ba9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Img_Label.py" beforeDir="false" afterPath="$PROJECT_DIR$/Img_Label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/run.vbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/split_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/split_video.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pic_mesure">
+  <component name="RunManager" selected="Python.UI">
     <configuration name="Img_Label" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ImageLabel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,7 +245,9 @@
       <workItem from="1571725381597" duration="106000" />
       <workItem from="1571725505411" duration="98000" />
       <workItem from="1571725623425" duration="10417000" />
-      <workItem from="1571736998142" duration="27000" />
+      <workItem from="1571736998142" duration="1527000" />
+      <workItem from="1571769915011" duration="1074000" />
+      <workItem from="1571801914044" duration="291000" />
     </task>
     <task id="LOCAL-00001" summary="inplementation">
       <created>1570344220065</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571735090211</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="UI">
+      <created>1571737106763</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1571737106763</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +374,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ImageLabel$UI.coverage" NAME="UI Coverage Results" MODIFIED="1571737023574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ImageLabel$UI.coverage" NAME="UI Coverage Results" MODIFIED="1571802203538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

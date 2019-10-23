@@ -51,6 +51,10 @@ def center_window(root, width, height):
     root.geometry(size)
 
 
+# def g(x):
+#    print(x)
+# g=lambda x:print(x)
+# g(10)
 if __name__ == "__main__":
     root = Tk()
     root.title('Image Label tool')
@@ -66,6 +70,7 @@ if __name__ == "__main__":
     dir_img = StringVar()
     ser_type = StringVar()
     class_anno = StringVar()
+    begin_num = IntVar()
     Label(frame0, text="----------------- Label -----------------").grid(row=3, column=1)
     Label(frame0, text="Path des images:".rjust(25, " ")).grid(row=4, column=0)
     Entry(frame0, textvariable=dir_img).grid(row=4, column=1)
@@ -73,8 +78,11 @@ if __name__ == "__main__":
     Entry(frame0, textvariable=ser_type).grid(row=5, column=1)
     Label(frame0, text="class des annotation:".rjust(25, " ")).grid(row=6, column=0)
     Entry(frame0, textvariable=class_anno).grid(row=6, column=1)
+    Label(frame0, text="bigin with:".rjust(25, " ")).grid(row=7, column=0)
+    Entry(frame0, textvariable=begin_num).grid(row=7, column=1)
     Button(frame0, text="explorer".center(25, ' '), command=lambda: selectdir(dir_img)).grid(row=4, column=2)
     Button(frame0, text="lancer labelling",
-           command=lambda: lance_label(dir_img.get(), ser_type.get(), class_anno.get())).grid(row=7, column=1)
+           command=lambda: lance_label(dir_img.get(), ser_type.get(), class_anno.get(), begin_num.get())).grid(row=8,
+                                                                                                               column=1)
     frame0.pack()
     root.mainloop()

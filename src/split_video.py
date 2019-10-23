@@ -5,6 +5,20 @@ from optparse import OptionParser
 import cv2
 
 
+def get_screen_size(window):
+    return window.winfo_screenwidth(), window.winfo_screenheight()
+
+
+def get_window_size(window):
+    return window.winfo_reqwidth(), window.winfo_reqheight()
+
+
+def center_window(root, width, height):
+    screenwidth = root.winfo_screenwidth()
+    screenheight = root.winfo_screenheight()
+    size = '%dx%d+%d+%d' % (width, height, (screenwidth - width) / 2, (screenheight - height) / 2)
+    root.geometry(size)
+
 def split_video(path_video, dir_img, frames):
     if not os.path.isfile(path_video):
         print(" Invalid path")
@@ -21,6 +35,7 @@ def split_video(path_video, dir_img, frames):
     while ret:
         count += 1
         ret, frame = cap.read()
+
         if count % frames == 0:
             print(" the {}th picture ...".format(str(count // frames).zfill(4)))
             cv2.imwrite(os.path.join(dir_img, str(count // frames).zfill(4) + '.png'), frame)
